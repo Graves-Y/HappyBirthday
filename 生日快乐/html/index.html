@@ -1,81 +1,48 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>Happy Birthday</title>
-		<link rel="stylesheet" href="../css/hovertree.css" />
-	</head>
-	<body>
-		<div class="hovertreeinfo">
-			<h2></h2>
-		</div>
-		<audio loop src="../music/qianyuqianxun.mp3" id="audio" autoplay preload="auto">���������֧��audio����</audio>
-		<div class="wrap">
-			<div class="cube">
-				<div class="out_front">
-					<img src="../img/3D/img01.jpg " class="pic" />
-				</div>
-				<div class="out_back">
-					<img src="../img/3D/img02.jpg" class="pic"/>
-				</div>
-				<div class="out_left">
-					<img src="../img/3D/img03.jpg" class="pic" />
-				</div>
-				<div class="out_right">
-					<img src="../img/3D/img04.jpg" class="pic" />
-				</div>
-				<div class="out_top">
-					<img src="../img/3D/img05.jpg" class="pic" />
-				</div>
-				<div class="out_bottom">
-					<img src="../img/3D/img06.jpg" class="pic" />
-				</div>
-				<span class="in_front">
-					<img src="../img/3D/img07.jpg" class="in_pic" />
-				</span>
-				<span class="in_back">
-					<img src="../img/3D/img08.jpg" class="in_pic" />
-				</span>
-				<span class="in_left">
-					<img src="../img/3D/img09.jpg" class="in_pic" />
-				</span>
-				<span class="in_right">
-					<img src="../img/3D/img10.jpg" class="in_pic" />
-				</span>
-				<span class="in_top">
-					<img src="../img/3D/img11.jpg" class="in_pic" />
-				</span>
-				<span class="in_bottom">
-					<img src="../img/3D/img12.jpg" class="in_pic" />
-				</span>
-			</div>
-		</div>
-<div class="bg"></div>
-	</body>
-	<script type="text/javascript">
-		document.addEventListener('DOMContentLoaded', function () {
-			function audioAutoPlay() {
-				var audio = document.getElementById('audio');
-				audio.play();
-				document.addEventListener("WeixinJSBridgeReady", function () {
-					audio.play();
-				}, false);
-			}
-			audioAutoPlay();
-		});
-		document.addEventListener('touchstart', function () {
-			function audioAutoPlay() {
-				var audio = document.getElementById('audio');
-				audio.play();
-			}
-			audioAutoPlay();
-		});
-	</script>
-<style>
-	.bg{
-		background: red;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title></title>
+
+  <link rel="stylesheet" href="../css/normalizel.css">
+
+  <link rel="stylesheet" href="../css/stylel.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+<canvas class="canvas"></canvas>
+
+<div class="help">?</div> 
+
+<div class="ui">
+  <input class="ui-input" type="text" />
+  <span class="ui-return">↵</span>
+</div>
+
+<div class="overlay">
+  <div class="tabs">
+    <div class="tabs-labels"><span class="tabs-label">Commands</span><span class="tabs-label">Info</span><span class="tabs-label">Share</span></div>
+
+    <div class="tabs-panels">
+      <ul class="tabs-panel commands">
+        <li class="commands-item"><span class="commands-item-title">Text</span><span class="commands-item-info" data-demo="Hello :)">Type anything</span><span class="commands-item-action">Demo</span></li>
+        <li class="commands-item"><span class="commands-item-title">Countdown</span><span class="commands-item-info" data-demo="#countdown 10">#countdown<span class="commands-item-mode">number</span></span><span class="commands-item-action">Demo</span></li>
+        <li class="commands-item"><span class="commands-item-title">Time</span><span class="commands-item-info" data-demo="#time">#time</span><span class="commands-item-action">Demo</span></li>
+        <li class="commands-item"><span class="commands-item-title">Rectangle</span><span class="commands-item-info" data-demo="#rectangle 30x15">#rectangle<span class="commands-item-mode">width x height</span></span><span class="commands-item-action">Demo</span></li>
+        <li class="commands-item"><span class="commands-item-title">Circle</span><span class="commands-item-info" data-demo="#circle 25">#circle<span class="commands-item-mode">diameter</span></span><span class="commands-item-action">Demo</span></li>
+
+        <li class="commands-item commands-item--gap"><span class="commands-item-title">Animate</span><span class="commands-item-info" data-demo="The time is|#time|#countdown 3|#icon thumbs-up"><span class="commands-item-mode">command1</span>&nbsp;|<span class="commands-item-mode">command2</span></span><span class="commands-item-action">Demo</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <script src="../js/index.js"></script>
+
+</body>
+
 </html>
