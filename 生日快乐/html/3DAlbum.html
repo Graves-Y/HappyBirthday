@@ -55,7 +55,7 @@
 	<script type="text/javascript">
 		document.addEventListener('DOMContentLoaded', function () {
 			function audioAutoPlay() {
-				var audio = document.getElementById('audio');
+				let audio = document.getElementById('audio');
 				audio.play();
 				document.addEventListener("WeixinJSBridgeReady", function () {
 					audio.play();
@@ -65,7 +65,7 @@
 		});
 		document.addEventListener('touchstart', function () {
 			function audioAutoPlay() {
-				var audio = document.getElementById('audio');
+				let audio = document.getElementById('audio');
 				audio.play();
 			}
 			audioAutoPlay();
